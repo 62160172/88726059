@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <input type="text" id="nb"></input>
+    
+    <button onclick="go()">Go</button></br>
+    <p id="demo"></p>
+<script>
+    rn = Math.floor(Math.random() * 100);
+    mak = "เกินไป"
+    noi = "น้อยไป"
+    taogun = "เย้"
+    document.write(rn);
+    function go(){
+        var x = document.getElementById("nb").value;
+        document.getElementById("demo").innerHTML =x;
+    }
+    if(nb > x){
+        document.write(mak);
+    }else if(nb < x){
+        document.write(noi);
+    }else{
+        document.write(taogun);
+    }
+</script>
+</body>
+</html>
