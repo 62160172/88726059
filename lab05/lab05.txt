@@ -1,0 +1,33 @@
+1.Event onLoad เกิดขึ้นเมื่อไหร่
+=> จะมีการโหลด ฟังก์ชั่นใน java script
+
+2.Event onSubmit เกิดขึ้นเมื่อไหร่
+=> เกิดเมื่อมีการกดปุ่ม โดย onSubmit จะรับค่า Return  
+ค่า true หรือ false ออกมา
+
+3. Attribute name ของแทก form, input มีไว้เพื่ออะไร
+=> Form นั้นจะถูกกำหนดเป็นพื้นที่ในการสร้างแบบฟอร์มต่างๆ ที่ประกอบไปด้วย Form  elemenl 
+ต่างๆ ซึ่ง Form  element นั้นเป็น element input เป็นการกำหนดรับค่าจากแป้มพิมพ์เข้าในระบบ
+
+4.ประโยคคำสั่ง var uid = document.registform.userid; คืออะไร
+=>เป็นการคืนค่าสิ่งที่กรอกข้อมูลมาของ userid เอาไปเก็บ uid
+
+5. .focus() คืออะไร
+=> บอกตำแหน่งไปที่เราต้องการ
+
+
+6.regular expression คืออะไร 
+var illegalChars = /\W/ 
+illegalChars.test(uid.value) 
+passid.value.search(/[a-zA-Z]+/) == -1 
+uname.value.match(letters)
+=> regular expression คือ ลำดับอักษร pattern ที่ใช้ในการค้นหาข้อความใน String โดยสามารถใช้ค้น
+    หาอย่างเดียว
+
+7.ความเข้าใจต่อ code ต่อไปนี้ 
+var usex = document.registform.sex; 
+usex.length 
+usex[i].checked
+=> 1) คืนค่าที่กรอกข้อมูลของ id  ที่ชื่อว่า sex ไปเก็บไว้ใน sex
+    2) เป็นการส่งกลับความยาวของตัวอีกอักษรที่กรอกของ usex
+    3) เป็นการคืนค่าตำแหน่งของตัวอักษรที่อยู่ในตัวแปล user ที่ตรวจสอบแล้ว
